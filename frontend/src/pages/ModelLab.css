@@ -1,0 +1,36 @@
+.lab__header { margin-bottom: 20px; }
+.lab__title { font-family: var(--font-display); font-size: 28px; font-weight: 700; margin: 4px 0 0; }
+
+.lab__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.lab__card p { font-size: 13px; color: var(--ink-dim); line-height: 1.6; margin-top: 0; }
+.lab__card--highlight { border-color: var(--signal-cyan-dim); }
+
+.lab__metrics {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 8px 16px;
+  margin: 14px 0 0;
+  font-size: 13px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline);
+}
+.lab__metrics dt { color: var(--ink-faint); }
+.lab__metrics dd { margin: 0; font-family: var(--font-mono); }
+
+.lab__note { font-size: 13px; color: var(--ink-dim); line-height: 1.6; margin-top: 0; }
+
+.lab__gap-list { font-size: 13px; color: var(--ink-dim); line-height: 1.7; padding-left: 18px; margin: 0; }
+.lab__gap-list li { margin-bottom: 10px; }
+.lab__gap-list strong { color: var(--ink); }
+
+.panel + .panel { margin-top: 18px; }
+
+@media (max-width: 900px) {
+  .lab__cards { grid-template-columns: 1fr; }
+}

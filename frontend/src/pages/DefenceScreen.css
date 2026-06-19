@@ -1,0 +1,64 @@
+.def__header {
+  display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px;
+}
+.def__title { font-family: var(--font-display); font-size: 28px; font-weight: 700; margin: 4px 0 0; }
+
+.def__empty { color: var(--ink-faint); font-size: 12.5px; padding: 32px 0; text-align: center; }
+
+.def__table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.def__table th {
+  text-align: left; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid var(--hairline);
+}
+.def__table td { padding: 9px 10px; border-bottom: 1px solid var(--hairline); color: var(--ink-dim); }
+.def__table tr:last-child td { border-bottom: none; }
+.def__table tr.is-inactive td { opacity: 0.45; }
+
+.def__scope {
+  background: var(--bg-void);
+  border: 1px solid var(--hairline-bright);
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.def__rule-cell {
+  font-size: 11px;
+  color: var(--signal-cyan);
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.def__whitelist-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.def__input {
+  background: var(--bg-void);
+  border: 1px solid var(--hairline-bright);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  color: var(--ink);
+  font-size: 13px;
+  font-family: var(--font-body);
+  flex: 1;
+  min-width: 180px;
+}
+
+.def__whitelist-list { list-style: none; margin: 0; padding: 0; }
+.def__whitelist-list li {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 4px; border-bottom: 1px solid var(--hairline);
+  font-size: 13px;
+}
+.def__whitelist-list li:last-child { border-bottom: none; }
+.def__whitelist-label { color: var(--ink-faint); flex: 1; }
+.def__remove {
+  background: none; border: none; color: var(--signal-red);
+  font-size: 12px; cursor: pointer; font-family: var(--font-mono);
+}
